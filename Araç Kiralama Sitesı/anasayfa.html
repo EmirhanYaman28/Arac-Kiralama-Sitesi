@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+<style>
+
+</style>
+
+<body>
+
+    <body style="background-color: black;">
+
+
+        <div class="container" style="background-color: black;">
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-secondary text-white fixed-top" style="font-weight: bold; ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="anasayfa.html">   
+                       <img src="resimler/yolcu360_logo_13e7491e19.svg" alt="Bootstrap" width="150" height="40">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="anasayfa.html">Anasayfa</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Araçlar
+                        </a>
+                        <ul class="dropdown-menu bg-secondary" >
+                          <li><a class="dropdown-item" href="binek.html" >Binek</a></li>
+                          <li><a class="dropdown-item" href="ticari.html">Ticari</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="spor.html">Spor</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                      </li>
+                   
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Arama Yapınız..." aria-label="Search">
+                      <button class="btn btn-danger"  type="submit" style="color: black;">Ara</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+
+                <!-- kayıt form -->
+
+                <form class="row g-3 mt-5" >
+                    <div class="form-floating col-md-3" style="margin-top: 100px;";>
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Ad Soyad</label>
+                      </div>
+
+                      <div class="form-floating col-md-3" style="margin-top: 100px;">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Telefon Numarası</label>
+                      </div>
+                     <div class="form-floating col-md-3" style="margin-top: 100px;">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating col-md-3" style="margin-top: 100px;">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Password</label>
+                      </div>
+
+
+
+
+                      
+                      
+                
+                      <div class="form-floating col-md-6">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                       <label for="inputAddress" class="form-label">Alış Yeri</label>
+                      </div>
+                    
+                    <div class="form-floating col-md-6">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                       <label for="inputAddress" class="form-label">Bırakılış Yeri</label>
+                      </div>
+
+
+
+
+                  
+                      <div class="col-md-3">
+                        <p style="color: gray;">Alış Tarihi</p>
+                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput"></label>
+                      </div>
+
+                      <div class="col-md-3">
+                        <p style="color: gray;">Alış Saati</p>
+                        <input type="time" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput"></label>
+                      </div>
+                      <div class="col-md-3">
+                        <p style="color: gray;">Bırakılış Tarihi</p>
+                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput"></label>
+                      </div>
+
+                      <div class="col-md-3">
+                        <p style="color: gray;">Bırakılış Saati</p>
+                        <input type="time" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput"></label>
+                      </div>
+                  
+                    <div class="col-12">
+                      <div class="form-check" style="color: gray;">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                         <a href="#">Sözleşmeyi</a> okudum kabul ediyorum
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-outline-success">Kiralık Araç Bul</button>
+                    </div>
+                  </form>
+
+
+            <!-- slide -->
+
+            <div id="carouselExampleIndicators" class="carousel slide mt-5">
+                <div class="carousel-indicators style=" height: 500px; width: 700px;">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <img src="resimler/408_6.webp" class="d-block w-100" alt="Resim Bulunamdı">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resimler/ford.jpeg" class="d-block w-100" alt="Resim Bulunamdı">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="resimler/daiciayyyy.webp" class="d-block w-100" alt="Resim Bulunamdı">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+
+            <!-- card -->
+            <div class="row mt-5 d-flex justify-content-center flex-wrap">
+                <h1 style="text-align: center; color: lightseagreen; font-weight: bold ;">Neden Yolcu 360?</h1>
+                <div class="card m-4" style="max-width: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="resimler/ekr.png" class="img-fluid rounded-start mt-4" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ödüllü 7/24 Misafir Merkezi</h5>
+                                <p class="card-text">Yolcu360'a ulaşmak çok kolay! Misafir Merkezi ekibimiz tüm ihtiyaçlarınız için 7/24 ulaşılabilir ve yanınızda.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card  m-4" style="max-width: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="resimler/ekr2.png" class="img-fluid rounded-start mt-3" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">%100 Misafir Mutluluğu</h5>
+                                <p class="card-text">Dünyanın dört bir yanından sayısız kullanıcı, güvenilir ve kolay araç kiralama için Yolcu360'ı tercih ediyor.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="max-width: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="resimler/ekr3.png" class="img-fluid rounded-start mt-3" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Koşulsuz %100 İade Garantisi</h5>
+                                <p class="card-text">Rezervasyonunuzu iptal etmeniz durumunda, Yolcu360 size koşulsuz ve kesintisiz %100 iade garantisi sağlar.</p>
+                                <p class="card-text"><small class="text-body-secondary"></small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+
+</body>
+
+</html>
